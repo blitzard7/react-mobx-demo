@@ -1,0 +1,19 @@
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input {
+  padding: 10px 50px 10px 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
