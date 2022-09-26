@@ -1,6 +1,35 @@
-.todo-list-container {
+.todo-container {
   display: flex;
   flex-direction: column;
+}
+
+.todo-status-container {
+  display: flex;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  min-width: 200px;
+  font-size: 14px;
+  padding: 7px;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.todo-element {
+  display: flex;
+  align-items: baseline;
+}
+
+.todo-element > label {
+  margin: 0px 10px;
+}
+
+.delete-icon {
+  height: 20px;
+}
+
+.delete-icon:hover {
+  cursor: pointer;
 }
 
 .todo-input {

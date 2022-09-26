@@ -2,14 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import App from "./App";
+import TodoPage from "./pages/Todo/TodoPage";
+import { TodoContext } from "./contexts/Todo/TodoContext";
+import { TodoStore } from "./store/Todo/TodoListStore";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+    <TodoContext.Provider value={TodoStore}>
+      <TodoPage />
+    </TodoContext.Provider>
   </React.StrictMode>
 );
 
